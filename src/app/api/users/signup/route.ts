@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
             password:hashedPass
         })
 
-        const savedUser=await newUser.save()
+        const savedUser = await newUser.save()
         console.log(savedUser)
 
         //send verification mail here

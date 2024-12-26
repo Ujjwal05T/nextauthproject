@@ -2,7 +2,6 @@ import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
 
-    username: {
         username:{
             type: String,
             required: [true,"Please provide a username"],
@@ -30,7 +29,6 @@ const userSchema = new mongoose.Schema({
         verifyToken:String,
         verifyTokenExpire:Date
         
-    }
 })
 
 const User = mongoose.models.users || mongoose.model('users', userSchema);
